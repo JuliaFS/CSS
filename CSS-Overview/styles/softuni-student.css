@@ -1,0 +1,99 @@
+html,
+body,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+#face{
+    background-color: #ffff00;
+    width: 290px;
+    height: 290px;
+    margin: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+#lefteye{
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-left: 55px;
+}
+
+#righteye{
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 165px;
+}
+
+#iris{
+    background-color: #000;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 27px;
+    margin-top: 30px;
+}
+
+#rightiris{
+    background-color: #000;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: -1px;
+}
+
+#nose{
+    background-color: #ff0000;
+    border: 2px solid #000;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 15px;
+}
+
+#mouse{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 140px;
+    height: 55px;
+    border-radius: 28px;
+    margin-left: 72px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.teeth1{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 25px;
+    height: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    margin-left: 42px;
+    margin-top: -2px;
+}
+
+.teeth2{
+    background-color: #fff;
+    border: 2px solid #000;
+    width: 25px;
+    height: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 70px;
+    margin-top: -2px;
+}
