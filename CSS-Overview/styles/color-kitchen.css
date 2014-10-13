@@ -144,11 +144,12 @@ section article footer a{
     color: #fff;
 }
 
-section article:nth-of-type(5) header{
+#\#HSLHSV{
     background-color: #0000ff;
     color: #fff;
 }
 
+/*escaped selector #\#lorem*/
 section article:nth-of-type(6) header{
     background-color: #800080;
     color: #fff;
