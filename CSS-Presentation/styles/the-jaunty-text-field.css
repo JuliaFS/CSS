@@ -1,0 +1,113 @@
+html,
+body,
+article,
+div,
+h1,
+p,
+span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Corbel, sans-serif;
+    font-size: 16px;
+}
+
+article{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-top: 5px dotted #ffff00;
+    border-right: 10px solid #008000;
+    border-bottom: 6px double #0000ff;
+    border-left: 5px dashed #ff0000;
+    box-shadow: 17px 17px 6px #3F3F3F;
+    padding: 10px 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 8px 6px 4px #d5d5d5;
+}
+
+#container{
+    box-shadow: 0 0 0 2px #ff0000, 0 0 0 4px #ffff00, 0 0 0 6px #008700, 0 0 0 8px #0031a0;
+    border-radius: 50px;
+    margin: 30px 10px;
+    width: 400px;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+#container p{
+    font-size: 1.1em;
+}
+
+#button-container{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#container span{
+    background-color: #de9519;
+    border: 3px outset #ffac00;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+#container span:last-of-type{
+    margin-left: 5px;
+}
+
+#bubble1{
+    background-color: rgba(158, 158, 158, 0.8);
+    color: #fff;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    border: 2px dashed #ffffff;
+    border-radius: 50px;
+    height: 50px;
+    width: 90px;
+    box-shadow: 0 0 0 5px rgba(158, 158, 158, 0.8);
+    position: absolute;
+    top: 75px;
+    left: 550px;
+    padding: 5px 10px;
+}
+
+#bubble1 p{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 10px 0 10px;
+}
+
+#bubble1 span{
+    text-transform: uppercase;
+}
+
+#bubble2{
+    background-color: rgba(158, 158, 158, 0.8);
+    border: 2px dashed #ffffff;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 0 0 5px rgba(158, 158, 158, 0.8);
+    position: absolute;
+    top: 129px;
+    left: 507px;
+}
+
+#bubble3{
+    background-color: rgba(158, 158, 158, 0.8);
+    border: 2px dashed #ffffff;
+    border-radius: 50px;
+    height: 12px;
+    width: 12px;
+    box-shadow: 0 0 0 5px rgba(158, 158, 158, 0.8);
+    position: absolute;
+    top: 165px;
+    left: 460px;
+}

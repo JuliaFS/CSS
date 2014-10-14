@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Styling a HTML Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/styling-HTML-form.css">
+</head>
+<body>
+    <div id="container">
+        <form>
+            <fieldset>
+                <legend>Step 1: Your details</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="First and last name" pattern="[A-z- ]+" required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="example@domain.com" pattern="\b[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}\b" required />
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" placeholder="e.g. +447500000000" pattern="[0-9+ ]+" required />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Step 1: Delivery address</legend>
+                <div id="address">
+                    <label for="address">Address</label>
+                    <textarea name="address"></textarea>
+                </div>
+                <div>
+                    <label for="post">Post code</label>
+                    <input name="post" pattern="[0-9]+" required/>
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <input name="country" pattern="[A-z ]+" required/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Step 1: Card details</legend>
+                <div id="card">
+                    <p>Card type</p>
+                    <div id="card-type">
+                        <input type="radio" name="card-type" id="visa">
+                        <label for="visa">VISA</label>
+                        <input type="radio" name="card-type" id="amex">
+                        <label for="amex">AmEx</label>
+                        <input type="radio" name="card-type" id="mastercard">
+                        <label for="mastercard">Mastercard</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="card-number">Card number</label>
+                    <input name="card-number" pattern="[0-9]{10,19}" required />
+                </div>
+                <div>
+                    <label for="security-code">Security code</label>
+                    <input name="security-code" pattern="[0-9]{3,5}" required />
+                </div>
+                <div>
+                    <label for="name-on-card">Name on card</label>
+                    <input type="text" name="name-on-card" placeholder="exact name as on the card" pattern="[A-z- ]+" required />
+                </div>
+            </fieldset>
+            <input type="submit" id="submit" value="BUY IT!" />
+        </form>
+    </div>
+</body>
+</html>

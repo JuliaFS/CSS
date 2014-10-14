@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Animated;
+    src: url('../resources/Animated.ttf');
+}
+
+body{
+    font-size: 16px;
+}
+
+#container{
+    background: -webkit-radial-gradient(circle at 150px 125px, #fff 5%, #bfddf6 20%, #006fdd 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle at 150px 125px, #fff 5%, #bfddf6 20%, #006fdd 100%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle at 150px 125px, #fff 5%, #bfddf6 20%, #006fdd 100%); /* For Fx 3.6 to 15 */
+    background: radial-gradient(circle at 150px 125px, #fff 5%, #bfddf6 25%, #006fdd 100%); /* Standard syntax (must be last) */
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#inside{
+    background-image:
+        url('../resources/VladoKHula.png'),
+        url('../resources/AlexHula.png'),
+        url('../resources/NakovHula.png'),
+        url('../resources/TediHula.png'),
+        url('../resources/PetiaHula.png'),
+        url('../resources/VladoGHula.png'),
+        url('../resources/HawaiiBackground.png');
+    background-repeat: no-repeat;
+    background-position: 670px 230px, 490px 200px, 410px 155px, 260px 370px, 179px 190px, 40px 220px, 0;
+    height: 600px;
+    width: 900px;
+}
+
+h1{
+    font-family: Animated;
+    font-size: 2.9em;
+    color: #ffc41f;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+}
