@@ -1,0 +1,207 @@
+html,
+body,
+div,
+header,
+h2,
+nav,
+main,
+h4,
+a,
+section,
+h2,
+article,
+h3,
+footer,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #101414;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 900px;
+    background-color: #fff;
+}
+
+#wrapper > header{
+    width: 900px;
+    height: 270px;
+    background-image: url('../images/headerBackground.jpg');
+    overflow: hidden;
+}
+
+#wrapper > header h2{
+    color: #fff;
+    font-size: 1.9em;
+    text-align: right;
+    margin-top: 205px;
+    margin-right: 40px;
+}
+
+#wrapper nav{
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ebebeb;
+    width: 900px;
+    height: 39px;
+}
+
+#wrapper nav ul{
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #ececec 56%, #e8e8e8 61%, #e7e7e7 78%, #e2e2e2 89%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(56%,#ececec), color-stop(61%,#e8e8e8), color-stop(78%,#e7e7e7), color-stop(89%,#e2e2e2), color-stop(100%,#e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ececec 56%,#e8e8e8 61%,#e7e7e7 78%,#e2e2e2 89%,#e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f6f6 0%,#ececec 56%,#e8e8e8 61%,#e7e7e7 78%,#e2e2e2 89%,#e3e3e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f6f6 0%,#ececec 56%,#e8e8e8 61%,#e7e7e7 78%,#e2e2e2 89%,#e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#ececec 56%,#e8e8e8 61%,#e7e7e7 78%,#e2e2e2 89%,#e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
+}
+#wrapper nav ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    border-right: 2px solid #f6f6f6;
+}
+
+#wrapper nav ul li a{
+    text-transform: uppercase;
+    color: #6c6e77;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+
+}
+
+.selected-button{
+    background-color: #b2b2b2;
+    color: #fff;
+}
+#wrapper nav ul li:hover{
+    background-color: #b2b2b2;
+    color: #fff;
+}
+
+main{
+    display: inline-block;
+    width: 600px;
+}
+
+main section{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px 25px;
+    position: relative;
+}
+
+main section:first-of-type header h3{
+    color: #91be00;
+    text-transform: uppercase;
+    font-size: 1.55em;
+}
+
+main section:last-of-type header h3{
+    color: #91be00;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+main section:last-of-type article{
+    width: 370px;
+    height: 130px;
+    margin-bottom: 13px;
+    margin-left: 170px;
+    margin-top: 17px;
+}
+
+main section:last-of-type article:nth-of-type(1)::before{
+    content: url(../images/0005.jpg);
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+main section:last-of-type article:nth-of-type(2)::before{
+    content: url(../images/0004.jpg);
+    position: absolute;
+    top: 205px;
+    left: 20px;
+}
+
+main section:last-of-type article:nth-of-type(3)::before{
+    content: url(../images/0003.jpg);
+    position: absolute;
+    top: 355px;
+    left: 20px;
+}
+
+main section:last-of-type article header h4{
+}
+main section:last-of-type article header p{
+}
+aside{
+    width: 25%;
+    float: right;
+}
+
+aside section{
+    background-color: #f4f4f4;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: -20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+aside section header h3{
+    color: #91be00;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.55em;
+    margin-bottom: 10px;
+}
+
+aside section article{
+    margin-bottom: 8px;
+}
+
+aside section article time{
+    font-weight: bold;
+    display: block;
+}
+
+aside section article span{
+    display: block;
+}
+
+aside section article a{
+    display: block;
+    color: #91be00;
+}
+
+aside section article p{
+    display: inline;
+}
+
+aside section:last-of-type article a{
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #a2dc3d;
+    border-top: 3px solid #bcec72;
+    height: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer a{
+    color: #000;
+}

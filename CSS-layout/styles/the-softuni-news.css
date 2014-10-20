@@ -1,0 +1,137 @@
+html,
+body,
+div,
+a,
+section,
+h2,
+article,
+h3,
+footer,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'PT Sans', Tahoma,sans-serif;
+    font-size: 14px;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1024px;
+    background-color: #f4f4f4;
+    background-image: url(../images/design.png);
+    background-repeat: repeat-x;
+}
+
+#container > div a{
+    background-color: #ffa000;
+    float: right;
+    clear: right;
+    padding: 5px 10px;
+    margin-right: 76px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+#container section{
+    width: 900px;
+    margin-left: 68px;
+    padding-top: 90px;
+    overflow: hidden;
+}
+
+#container section h2{
+    color: #102342;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+#container section article{
+    width: 230px;
+    height: 280px;
+    float: left;
+    background-color: #fff;
+    margin-left: 20px;
+    border: 1px solid #cbcbcb;
+    border-top: none;
+    padding: 15px 25px;
+}
+
+#container section article:first-of-type{
+    margin-left: 0;
+}
+
+#container section article h3{
+    font-size: 0.9em;
+    color: #102342;
+    height: 25px;
+}
+
+.date{
+    color: #67535d;
+    text-align: right;
+    font-size: 0.9em;
+}
+
+.publisher{
+    font-size: 0.8em;
+    color: #a29b8e;
+}
+
+.text{
+    font-size: 0.8em;
+    color: #a29b8e;
+}
+
+#container section article footer{
+    display: inline-block;
+}
+
+#container section article footer p{
+    color: #686768;
+    display: inline;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#container section article footer a{
+    text-decoration: none;
+    color: #a29b8e;
+    font-size: 0.8em;
+}
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    background-color: #44a0df;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-right: 1px solid #fff;
+
+}
+
+ul li:not(:first-of-type) {
+    margin-left: -4px;
+}
+ul li a:hover{
+    background-color: #ffa000;
+}
+
+.default{
+    background-color: #ffa000;
+}
