@@ -1,0 +1,209 @@
+body{
+    background-color: #689cff;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#wrapper header{
+    padding-bottom: 0.6%;
+}
+
+#wrapper > header h1{
+    font-size: 2.5em;
+    margin-left: 3%;
+}
+
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    text-align: right;
+}
+
+nav:before {
+    height: 1px;
+    background: #000;
+    content: "";
+    display: block;
+    position: relative;
+    top: 20px;
+    z-index: -1;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 1.8% 0 0;
+}
+
+nav ul li{
+    display: inline-block;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 0.7% 1%;
+    margin-left: 1.6%;
+}
+
+nav ul li a{
+    color: #000;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#wrapper section{
+    width: 75%;
+    display: inline-block;
+}
+
+#wrapper section article{
+    background-color: #e0eafe;
+    border: 1px solid #000;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 2.4%;
+}
+
+#wrapper section article header h1{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+#wrapper > section article div > p{
+    text-indent: 25px;
+    text-align: justify;
+
+}
+
+#wrapper aside{
+    background-color: #e0eafe;
+    border: 1px solid #000;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-top: 1%;
+    margin-left: 3.7%;
+}
+
+
+.news ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 7% 8%;
+}
+
+.block{
+    margin-bottom: 6%;
+}
+
+.block a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9em;
+}
+
+.block a:hover{
+    color: blue;
+}
+
+footer{
+    background-color: #e0eafe;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 1.5%;
+    padding-bottom: 0.5%;
+    margin-top: 2%;
+}
+
+footer h2{
+    font-size: 1.4em;
+    margin: 0;
+}
+
+/*=============================
+RESPONSIVE STYLES
+=============================*/
+
+@media all and (max-width: 960px) and (min-width: 780px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 780px) and (min-width: 640px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    #wrapper section{
+        display: block;
+        width: 100%;
+    }
+
+    #wrapper aside{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    #wrapper aside ul{
+        padding: 0;
+        margin: 0;
+    }
+    #wrapper aside ul li{
+        width: 18%;
+        display: inline-block;
+        margin-left: 5%;
+        margin-top: 2.5%;
+        vertical-align: top;
+    }
+
+    input[type=searh]{
+        width: 80%;
+        display: block;
+    }
+
+    #wrapper aside ul li a{
+
+    }
+}
+
+@media all and (max-width: 640px){
+    #wrapper{
+        width: 100%;
+    }
+    nav{
+        text-align: center;
+    }
+
+    nav ul{
+        margin-right: 7%;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    #wrapper section{
+        width: 100%;
+    }
+
+    #wrapper aside{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    #wrapper aside ul{
+        padding: 2% 6% 1% 9%;
+        margin: 0;
+        text-align: center;
+    }
+    #wrapper footer h2{
+        font-size: 1.1em;
+    }
+}

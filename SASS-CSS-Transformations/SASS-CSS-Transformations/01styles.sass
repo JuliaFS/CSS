@@ -1,0 +1,179 @@
+$border: 2px solid gray;
+$border-inside: 2px solid gray;
+$text-color: gray;
+
+@mixin vertical-gradient($start-color){
+  background: -webkit-linear-gradient($start-color, white);
+}
+@mixin horizontal-gradient($start-color){
+  background: -webkit-linear-gradient(left, $start-color, white);
+}
+@mixin diagonal-gradient($start-color){
+  background: -webkit-linear-gradient(left top, $start-color, white);
+}
+@mixin radial-gradient($start-color){
+  background: radial-gradient($start-color, white);
+}
+@mixin color-div{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  display: inline-block;
+}
+#wrapper{
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  border: $border;
+  text-align: center;
+    li{
+      list-style-type: none;
+        a{
+            text-decoration: none;
+            color: $text-color;
+          }
+      }
+   }
+  header{
+    color: $text-color;
+    border: $border;
+    margin: 15px;
+      ul{
+          display: inline-block;
+        li{
+          display: inline-block;
+           margin-right: 50px;
+             a{
+               border: $border-inside;
+                 padding: 5px 20px;
+                    &:hover{
+                         color: white;
+                         border-left: none;
+                         border-right: none;
+                         @include vertical-gradient(gray);
+                         cursor: context-menu;
+                    }
+               }
+           }
+        }
+   }
+  .radial, .linear{
+    border: $border;
+}
+  .horizontal, .vertical, .diagonal, section, article{
+    border: $border-inside;
+    margin: 15px;
+    color: $text-color;
+    padding-bottom: 10px;
+    h1{
+      font-size: 16px;
+      text-decoration: underline;
+      }
+    h2{
+      font-size: 13px;
+    }
+}
+  .innerContainer{
+    div {
+      @include color-div;
+  }
+}
+  .linear article:nth-child(2) .innerContainer{
+    .purple{
+      @include vertical-gradient(purple);
+  }
+    .blue{
+      @include vertical-gradient(blue);
+  }
+    .green{
+      @include vertical-gradient(green);
+  }
+    .yellow{
+      @include vertical-gradient(yellow);
+  }
+    .orange{
+      @include vertical-gradient(orange);
+  }
+    .red{
+      @include vertical-gradient(red);
+  }
+}
+  .linear article:nth-child(3) .innerContainer {
+    .purple{
+      @include horizontal-gradient(purple);
+  }
+    .blue{
+      @include horizontal-gradient(blue);
+  }
+    .green{
+      @include horizontal-gradient(green);
+  }
+    .yellow{
+      @include horizontal-gradient(yellow);
+  }
+    .orange{
+      @include horizontal-gradient(orange);
+  }
+    .red{
+      @include horizontal-gradient(red);
+  }
+}
+  .linear article:nth-child(4) .innerContainer {
+    .purple{
+      @include diagonal-gradient(purple);
+  }
+    .blue{
+      @include diagonal-gradient(blue);
+  }
+    .green{
+      @include diagonal-gradient(green);
+  }
+    .yellow{
+      @include diagonal-gradient(yellow);
+  }
+    .orange{
+      @include diagonal-gradient(orange);
+  }
+    .red{
+      @include diagonal-gradient(red);
+  }
+}
+  .radial{
+    .innerContainer{
+      padding: 10px;
+      .purple{
+        @include radial-gradient(purple);
+    }
+      .blue{
+        @include radial-gradient(blue);
+    }
+      .green{
+        @include radial-gradient(green);
+    }
+      .yellow{
+        @include radial-gradient(yellow);
+    }
+      .orange{
+        @include radial-gradient(orange);
+    }
+      .red{
+        @include radial-gradient(red);
+    }
+  }
+}
+  footer{
+    text-align: center;
+
+    ul{
+      padding: 0;
+    }
+    h3{
+      color: $text-color;
+      font-size: 17px;
+      text-decoration: underline;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+}
+
